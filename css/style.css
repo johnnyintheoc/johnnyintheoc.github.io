@@ -8,4 +8,4 @@ a, a:link, a:active, a:visited, a:hover {font-family:'Montserrat', sans-serif;fo
 #content-wrapper {clear:both;float:left;width:100%;height:400px;}
 #content-pad {padding:20px;}
 #footer-wrapper {clear:both;float:left;width:100%;height:20px;border-top:1px solid #cccccc;}
-#footer-wrapper p {text-align:center;}
+#footer-wrapper p {text-align:center;padding:10px;}
