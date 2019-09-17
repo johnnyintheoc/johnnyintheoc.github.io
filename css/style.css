@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 html, body, * {font-family:'Montserrat', sans-serif;font-size:11px;margin:0;padding:0;}
 a, a:link, a:active, a:visited, a:hover {font-family:'Montserrat', sans-serif;font-size:11px;}
-#header-wrapper {width:100%;height:100px;background-color:black;}
+#header-wrapper {width:100%;height:100px;background-color:#253e4d;}
 #logo {width:100%;text-align:center;padding:15px;font-size:18px;color:#ffffff;}
 #nav {list-style:none;margin:0 auto;padding:0;clear:both;width:400px;}
 #nav li {float:left;margin-top:10px;margin-left:40px;}
