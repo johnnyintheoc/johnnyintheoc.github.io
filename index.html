@@ -1,5 +1,28 @@
-<!-- #include file="header.html" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script>
+        $(function{
+            $("#header-inc").load("header.html");
+            $("#footer-inc").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+
+<div id="header-inc"></div>
+
 <div id="content-wrapper">
 <p align="center">Welcome</p>
 </div>
-<!-- #include file="footer.html" -->
+
+<div id="footer-inc"></div>
+
+</body>
+</html>
