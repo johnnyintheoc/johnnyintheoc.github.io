@@ -1,5 +1,3 @@
-/* stylesheet */
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 html, body, * {font-family:'Montserrat', sans-serif;font-size:11px;margin:0;padding:0;}
 a, a:link, a:active, a:visited, a:hover {font-family:'Montserrat', sans-serif;font-size:11px;}
 #header-wrapper {width:100%;height:100px;background-color:#253e4d;}
