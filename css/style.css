@@ -12,6 +12,7 @@ a, a:link, a:active, a:visited, a:hover {font-family:'Montserrat', sans-serif;fo
 #content-pad {padding:20px;}
 #content-block {width:500px;margin:0 auto;text-align:justify;}
 #content-block h1 {font-size:18px;}
+#content-block .project-examples {list-style:none;margin:0;}
 
 #footer-wrapper {clear:both;float:left;padding:10px;width:100%;border-top:1px solid #cccccc;}
 #footer-wrapper div {clear:both;text-align:center;padding:10px;}
