@@ -80,6 +80,18 @@
                 <br />Language: PHP, VBA
                 <br />Database: MySQL
             </p>
+
+            <br />
+            <p>
+                <u>Web Data Encryption</u>
+                <br />The process for this web data encryption involved writing a custom cipher class to encrypt any string data passed in. It then returned the encrypted data along with an IV security key. The cipher used a unique token key with a 256 bit security. The encrypted data would then be stored in a database field along with it's IV key for decryption. The data encrypted involved the last 4 digits of an SSN, phone numbers, and addresses.
+                <br />
+            </p>
+
+            <p> <u>File Encryption</u>
+                Although the encryption class written for this was mainly used for PDF files, any file passed through would be encrypted. The physical PDF file would be encrypted and a token key returned for decryption. Encrypted files were stored in a secure root section away from public access.
+                <br />
+            </p>
         </div>
     </div>
 </div>
