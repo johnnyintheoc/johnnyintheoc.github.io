@@ -8,7 +8,8 @@
     <title>Portfolio - Projects</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -32,64 +33,89 @@
             <h1>Projects</h1>
             <br />
             <p>This page highlights the important 
-            developments that I have done in different areas of programming. Some examples include working with website 
-            security and encryption, and full stack development from front end UI to database programming.</p>
+            developments in different areas of programming. Some examples include working with website 
+            security, data and file encryption, and full stack development from front end to database programming.</p>
             
             <p>&nbsp;</p><br />
 
-            <ul class="project-examples">
+            <ul class="project-img">
                 <li><img src="img/wv-01.jpg" border="0" /></li>
             </ul>
 
             <br />
-            <p>This project was a fully functional website with a sign in members area programmed in PHP and uses MySQL databases. 
-                It has data encryption, file encryption, web seurity, and is one of the most involved projects that required 
-                integration of the company's old VBA databases.</p>
+            <ul class="project-info">
+                <li>Fully functional secure members area with ID/Password sign in</li>
+                <li>Search Engine Optimized</li>
+                <li>SSL and 256 bit AES data encryption</li>
+                <li>File encrypt/decrypt</li>
+                <li>Forgot password with email verification</li>
+                <li>Backend area for member lookup and modify</li>
+                <li>Members document system</li>
+                <li>Members investment lookup with easy pdf/excel file download options</li>
+                <li>Languages: PHP, Jquery, VBA, HTML/CSS</li>
+                <li>Databases: MySQL, VBA</li>
+            </ul>
             
-            <br />
-            <p>
-                Languages: PHP, Jquery, VBA, HTML/CSS
-                <br />Templates: Customized Wordpress
-                <br />Databases: MySQL, VBA
-                <br />Data Encryption: SSL Security, AES Rijndael cipher
-                <br />File Encryption: PDF files, AES Encrypt/Decrypt
-            </p>
+            <p>&nbsp;</p><p>&nbsp;</p>
+            <ul class="project-img">
+                <li><img src="img/wv-noteboard.jpg" border="0" /></li>
+            </ul>
 
             <br />
-            <p>
-                <u>Noteboard</u>
-                <br />This noteboard was created on the subdomain for the company to communicate internally using a members area. Each member were allowed to leave a message on the noteboard allow all members to view and respond to. As messages were posted, an email system notified all members and were allowed to easily respond using the email link. Members could further upload documents, images, and change their profile photo.
-                <br />Languages: PHP, Jquery, HTML/CSS
-                <br />Database: MySQL
-                <br />Security: SSL, internal company IP access only using htaccess file
-            </p>
+            <ul class="project-info">
+                <li>Company message board with message archiving</li>
+                <li>Secure members area with ID/Password sign in</li>
+                <li>SSL and internal company IP access only</li>
+                <li>File and photo uploads</li>
+                <li>Email notification for messages and responses</li>
+                <li>Clean message layout with grouping, formatting, and fast loading</li>
+                <li>Languages: PHP, Jquery, HTML/CSS</li>
+                <li>Database: MySQL</li>
+            </ul>
+
+            <p>&nbsp;</p><p>&nbsp;</p>
+            <ul class="project-img">
+                <li><img src="img/wv-zoho.jpg" border="0" /></li>
+            </ul>
 
             <br />
-            <p>
-                <u>Zoho V2 API Integration</u>
-                <br />This project involved writing a custom class to handle the token security that Zoho V2 required for web based interactions (search, insert, modify, etc). The token expired every hour, so database tables were required for handling and resuing tokens for optimal performance.
-                Further, CSV files were created and exported to a secure location for integrating with the Bluehornet API (see below).
-                <br />Language: PHP
-                <br />Database: MySQL
-            </p>
+            <ul class="project-info">
+                <li>Zoho V2 API Web Integration</li>
+                <li>Custom class written to handle token security for Zoho V2 required</li>
+                <li>Real time web based interactions (search, insert, modify, etc)</li>
+                <li>Output of Zoho data to CSV for import to Bluehornet API</li>
+                <li>Real time VBA data insert/update to Zoho</li>
+                <li>Language: PHP</li>
+                <li>Database: MySQL</li>
+            </ul>
+
+            <p>&nbsp;</p><p>&nbsp;</p>
+            <ul class="project-img">
+                <li><img src="img/wv-bh.jpg" border="0" /></li>
+            </ul>
 
             <br />
-            <p>
-                <u>Bluehornet API</u>
-                <br />This project involved writing a custom class for downloading data from Bluehornet as well as direct data updates using VBA over HTTPS.
-                <br />Language: PHP, VBA
-                <br />Database: MySQL
-            </p>
+            <ul class="project-info">
+                <li>Mapp Cloud (formally Bluehornet API) Web Integration</li>
+                <li>Custom class written to handle Bluehornet API</li>
+                <li>Realtime Bluehornet data updates</li>
+                <li>Processing of Zoho CSV data to Bluehornet</li>
+                <li>Real time VBA data insert/update to Bluehornet</li>
+                <li>Language: PHP, VBA</li>
+                <li>Database: MySQL</li>
+            </ul>
 
-            <br />
+            <p>&nbsp;</p><p>&nbsp;</p>
             <p>
                 <u>Web Data Encryption</u>
-                <br />The process for this web data encryption involved writing a custom cipher class to encrypt any string data passed in. It then returned the encrypted data along with an IV security key. The cipher used a unique token key with a 256 bit security. The encrypted data would then be stored in a database field along with it's IV key for decryption. The data encrypted involved the last 4 digits of an SSN, phone numbers, and addresses.
+                <br />The process for this web data encryption involved writing a custom cipher class to encrypt any string data passed in. It then returned the encrypted data along with an IV security key. The cipher used a unique token key with a AES Rijndael 256 bit security. The encrypted data would then be stored in a database field along with it's IV key for decryption. Data examples: last 4 digits of an SSN, phone numbers, addresses, etc.
                 <br />
             </p>
-
-            <p> <u>File Encryption</u>
-                Although the encryption class written for this was mainly used for PDF files, any file passed through would be encrypted. The physical PDF file would be encrypted and a token key returned for decryption. Encrypted files were stored in a secure root section away from public access.
+            
+            <p>&nbsp;</p><p>&nbsp;</p>
+            <p>
+                <u>File Encryption</u>
+                <br />Although the encryption class written for this was mainly used for PDF files, any file passed through would be encrypted. The physical PDF file would be encrypted and a token key returned for decryption. Encrypted files were stored in a secure root section away from public access. Original files were archived internally on network drives for backup and could be quickly uploaded/overwritten and encrypted.
                 <br />
             </p>
         </div>
@@ -97,14 +123,7 @@
 </div>
 
 <div id="footer-wrapper">
-    <div>
-        <ul id="social-icons">
-            <li><img src="img/ig-icon.jpg" border="0" width="30" /></li>
-            <li><img src="img/fb-icon.jpg" border="0" width="30" /></li>
-            <li><img src="img/mail-icon.jpg" border="0" width="30" /></li>
-        </ul>
-    </div>
-    <div>johnnyintheoc.github.io &copy; 2019</div>
+    <div id="footer-block"></div>
 </div>
 
 </body>
