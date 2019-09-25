@@ -7,7 +7,8 @@
     <title>Portfolio - Databases</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -29,22 +30,41 @@
         <div id="content-pad">
             <div id="content-block">
                 <h1>Databases</h1>
-                <br />
-                <p>This page mainly covers MySQL databases and different ways they were used with real world projects.</p>
-                <br />
+                
+                <p>&nbsp;</p><br />
+                <p>This page covers database knowledge, scripting, and maintenance.</p>
+                
+                <p>&nbsp;</p><br />
+                <u>MySQL database</u>
+                <ul class="project-info">
+                    <li>Full knowledge of database operations and joins</li>
+                    <li>Database backup export &amp; restoration imports</li>
+                    <li>PhpMyadmin or manual</li>
+                    <li>Data security using encryption &amp; decryption</li>
+                </ul>
+
+                <p>&nbsp;</p><br />
+                <u>VB Access database</u>
+                <ul class="project-info">
+                    <li>Company used old VBA database for internal use and wanted to integrate to online MySQL database along with other web sites using their API. Below were some of the processes created.</li>
+                    <li>Simplified VBA database created as crons and used with daily scheduled tasks.</li>
+                    <li>Database contained functions that exported and sync'd data to MySQL database, Zoho API, and Mapp Cloud API.</li>
+                    <li>Background tasks ran mornings and nights for data sync. One main task ran in 15 minute intervals for quick updates.</li>
+                    <li>Database automateed tasks further had operations for PDF file exports, CSV file exports, and SFTP file uploads for private clients.</li>
+                </ul>
+
+                <p>&nbsp;</p><br />
+                <u>Python &amp; Mac database</u>
+                <ul class="project-info">
+                    <li>Mac database was used in learning Python on the Mac OS. This database was used with the Django framework for web development.</li>
+                    <li>XAMPP Mac OS was also installed for using PhpMyadmin with the database.</li>
+                </ul>
             </div>
         </div>
     </div>
     
     <div id="footer-wrapper">
-        <div>
-            <ul id="social-icons">
-                <li><img src="img/ig-icon.jpg" border="0" width="30" /></li>
-                <li><img src="img/fb-icon.jpg" border="0" width="30" /></li>
-                <li><img src="img/mail-icon.jpg" border="0" width="30" /></li>
-            </ul>
-        </div>
-        <div>johnnyintheoc.github.io &copy; 2019</div>
+        <div id="footer-block"></div>
     </div>
 
 </body>
