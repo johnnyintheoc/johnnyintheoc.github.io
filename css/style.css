@@ -142,7 +142,7 @@ code {font-size:16px;background-color:lightyellow;}
 @media (max-width:768px) {
     .logo {display:block;position:static;margin:0 auto;width:90px;}
     .logo img {display:block;width:90px;margin:20px auto;}
-    nav {display:block;position:static;width:290px;margin:auto;}
+    nav {display:block;position:static;width:292px;margin:auto;}
     .main-nav {display:block;position:static;}
     .main-nav li {float:left;}
     section {margin-top:50px;}
