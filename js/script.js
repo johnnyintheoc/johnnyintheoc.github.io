@@ -3,7 +3,7 @@ $(function() {
     
     $('#header-block').load('https://johnnyintheoc.github.io/header.html');
 
-    $('.burger-menu ul').mouseup(function(e) {
+    $('.burger-menu ul').click(function(e) {
         $('.side-nav').addClass('active');
     });
 
