@@ -102,7 +102,19 @@ section {
     padding:20px;
     opacity: 0.9;
 }
-section .web-dev li {margin-left:40px;}
+section .web-details li {
+    margin-left:40px;
+}
+section .project-details {
+    margin-left:60px;
+}
+section .project-img {
+    list-style:none;
+    margin-left:40px;
+}
+section .project-img img {
+    border:1px solid #ccc;
+}
 footer {
     overflow:hidden;
     border-radius: 5px;
