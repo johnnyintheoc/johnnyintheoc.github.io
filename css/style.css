@@ -102,7 +102,7 @@ section {
     padding:20px;
     opacity: 0.9;
 }
-section .web-details li {
+section .web-details {
     margin-left:40px;
 }
 section .project-details {
@@ -110,7 +110,6 @@ section .project-details {
 }
 section .project-img {
     list-style:none;
-    margin-left:40px;
 }
 section .project-img img {
     border:1px solid #ccc;
@@ -147,4 +146,10 @@ code {font-size:16px;background-color:lightyellow;}
     .main-nav li {float:left;clear:both;width:100%;border-right:none;}
     section {margin-top:50px;}
     .burger-menu ul {display:block;}
+    section {font-size:11px;}
+    section code {font-size:11px;}
+    section .project-img img {width:275px;}
+    section .web-details {margin-left:40px;}
+    section .project-details {margin-left:40px;}
+    footer {font-size:11px;}
 }
