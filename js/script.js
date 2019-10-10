@@ -7,7 +7,7 @@ $(function() {
         $('.side-nav').addClass('active');
     });
 
-    $(document).mouseup(function(e) {
+    $(document).click(function(e) {
         var container = $('.side-nav');
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             $('.side-nav').removeClass('active');
