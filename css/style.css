@@ -1,23 +1,138 @@
-html, body, * {font-family:'Montserrat', sans-serif;font-size:11px;margin:0;padding:0;}
-a, a:link, a:active, a:visited, a:hover {font-family:'Montserrat', sans-serif;font-size:11px;}
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+body {
+    font-family:'Poppins', sans-serif;
+    background:url('../img/wallpaper-03.jpg') no-repeat fixed center;
+    background-size:cover;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top:10px;
+}
+.logo {
+    position:absolute;
+    top:15px;
+    left:15px;
+}
+.logo img {
+    width:60px;
+}
+.logo a {
+    display:block;
+}
+nav {
+    overflow:hidden;
+    position:absolute;
+    right:15px;
+    top:15px;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    user-select: none;
+    transition: border-color 0.5s ease, opacity 0.4s ease;
+    background-color:#fff;
+}
+.main-nav {
+    display:flex;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style:none;
+    white-space:nowrap;
+}
+.main-nav li {
+    display:flex;
+    align-items:center;
+    border-right:1px solid #ccc;
+}
+.main-nav li:last-child {
+    border-right-style:none;
+}
+.main-nav li a {
+    text-decoration: none;
+    font-size:12px;
+    padding:10px;
+    background-color:#fff;
+    color:#000;
+    font-weight:bold;
+    width:100%;
+}
+.main-nav a:hover {
+    background-color:#eaeaea;
+}
+.side-nav {
+    display:none;
+    overflow:hidden;
+    position:absolute;
+    margin:0;
+    top:0;
+    background-color:#eaeaea;
+    padding:10px;
+    width:250px;
+    height:100%;
+    opacity: 0.97;
+    z-index:99;
+}
+.side-nav ul {list-style:none;width:100%;margin:0;padding:0;}
+.side-nav a {
+    display:block;
+    text-decoration:none;
+    font-size:14px;
+    color:#000;
+    padding:20px;
+    width:100%;
+}
+.side-nav a:hover {background-color:white;}
+.wallpaper {
+    overflow:hidden;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index:-99;
+}
+section {
+    overflow:hidden;
+    border-radius: 5px;
+    background-color:#fff;
+    width:80%;
+    margin:100px auto;
+    padding:20px;
+    opacity: 0.9;
+}
+section .web-dev li {margin-left:40px;}
+footer {
+    overflow:hidden;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    width:80%;
+    margin:100px auto;
+    padding:10px;
+    color:gray;
+    font-size:14px;
+    text-align:center;
+    background-color:#fff;
+    opacity: 0.65;
+}
+footer img {width:30px;vertical-align: middle;}
+.burger-menu ul {display:none;width:30px;list-style:none;margin:20px 20px;padding:0;cursor:pointer;}
+.burger-menu ul li {
+    width:100%;
+    height:4px;
+    margin:6px 0;
+    background-color:#fff;
+}
+.active {display:block;}
+code {font-size:16px;background-color:lightyellow;}
 
-#header-wrapper {width:100%;height:100px;background-color:#fff;}
-#logo {width:100%;text-align:center;padding:15px 0px;font-size:18px;color:#000;}
-
-#nav {list-style:none;margin:0 auto;padding:0;clear:both;width:500px;}
-#nav li {float:left;margin-top:10px;margin-left:43px;}
-#nav li a:link, #nav li a:visited, #nav li a:hover {color:#000;}
-
-#content-wrapper {clear:both;float:left;width:100%;}
-#content-pad {padding:20px;}
-#content-block {width:500px;margin:0 auto;text-align:justify;}
-#content-block h1 {font-size:18px;}
-#content-block .project-img {list-style:none;margin:20px 0 0 0;padding:0;}
-#content-block .project-img img {border:1px solid #ccc;}
-#content-block .project-info {list-style:square;margin-left:40px;}
-
-#footer-wrapper {clear:both;float:left;padding:10px;width:100%;border-top:1px solid #cccccc;}
-#footer-wrapper div {clear:both;text-align:center;padding:10px;}
-
-#social-icons {list-style:none;display:inline-block;}
-#social-icons li {float:left;width:60px;}
+@media (max-width:768px) {
+    .logo {display:block;position:static;margin:0 auto;width:90px;}
+    .logo img {display:block;width:90px;margin:20px auto;}
+    nav {display:block;position:static;width:290px;margin:auto;}
+    .main-nav {display:block;position:static;}
+    .main-nav li {float:left;}
+    section {margin-top:50px;}
+    .burger-menu ul {display:block;}
+}
