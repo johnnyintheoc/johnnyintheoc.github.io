@@ -25,3 +25,21 @@
         <li><a href="https://johnnyintheoc.github.io/about.html">About</a></li>
     </ul>
 </nav>
+
+<script>
+    $(function() {
+        $('.burger-menu ul').on('click', function(e) {
+            e.preventDefault();
+            $('.side-nav').addClass('active');
+            //$('.side-nav').css('display','block');
+        });
+        
+        $(document).mouseup(function(e) {
+            var container = $('.side-nav');
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                $('.side-nav').removeClass('active');
+                //$('.side-nav').css('display','none');
+            }
+        });
+    });
+</script>
