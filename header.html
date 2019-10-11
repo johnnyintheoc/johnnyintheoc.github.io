@@ -29,13 +29,12 @@
 <script>
     $(function() {
         $('.burger-menu ul').on('click', function(e) {
-            e.preventDefault();
             $('.side-nav').addClass('active');
             //$('.side-nav').css('display','block');
         });
         
         $(document).mouseup(function(e) {
-            var container = $('.side-nav');
+            let container = $('.side-nav');
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 $('.side-nav').removeClass('active');
                 //$('.side-nav').css('display','none');
