@@ -30,14 +30,12 @@
     $(function() {
         $('.burger-menu ul').on('click', function(e) {
             $('.side-nav').addClass('active');
-            //$('.side-nav').css('display','block');
         });
         
         $(document).mouseup(function(e) {
-            let container = $('.side-nav');
+            const container = $('.side-nav');
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 $('.side-nav').removeClass('active');
-                //$('.side-nav').css('display','none');
             }
         });
     });
