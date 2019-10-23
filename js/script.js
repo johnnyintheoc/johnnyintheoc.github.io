@@ -32,10 +32,13 @@ $(function() {
 
     function getIphoneTxt() {
         const dte = new Date();
-        const txt = '<p><span class="iphone-txt-bubble">' + $('input[name=iphone-txt]').val() + '</span> <span class="iphone-date">' + dte.toLocaleString() + '</span></p>';
-        $('.iphone-output').append(txt);
-        $('.iphone-txt-bubble').fadeIn('slow');
-        $('input[name=iphone-txt]').val('');
+        const msg = $('input[name=iphone-txt]').val();
+        if (msg != '') {
+            const txt = '<p><span class="iphone-txt-bubble">' + msg + '</span> <span class="iphone-date">' + dte.toLocaleString() + '</span></p>';
+            $('.iphone-output').append(txt);
+            $('.iphone-txt-bubble').fadeIn('slow');
+            $('input[name=iphone-txt]').val('');
+        }
     }
 
     function closeLightbox(e) {
