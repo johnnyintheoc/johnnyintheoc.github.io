@@ -19,18 +19,30 @@
 <section class="content">
     <h1>Projects</h1>
     <br />
-    <p>This page highlights the important 
-    developments in different areas of programming. Some examples include working with website 
-    security, data and file encryption, and full stack development from front end to database programming.</p>
+    <p>These projects highlight a wide range of programming in my Web Development process.</p>
     <br>
 
-    <h1>Node.js</h1><br />
+    <h1>Node.js + React</h1><br />
+
+    <ul class="project-img">
+        <li><img src="img/node-youtube.jpg" border="0" /></li>
+    </ul>
+    <ul class="project-details">
+        <li>This project uses the googleapis library to retrieve videos by keyword.</li>
+        <li>Data is retreived and saved to a MySQL table to limit API query call limits.</li>
+        <li>A JSON file is generated from the MySQL table to stop multiple database reads.</li>
+        <li>The page is displayed by reading from the JSON file for faster loading.</li>
+        <li>Custom youtube class file was created to handle these methods.</li>
+        <li>Uses Node, React, and the Google API</li>
+        <li><code>https://github.com/johnnyintheoc/react-app</code></li>
+    </ul><br /><br />
 
     <ul class="project-img">
         <li><img src="img/node-react.jpg" border="0" /></li>
     </ul>
     <ul class="project-details">
-        <li>Retreives data from an API and display it's images dynamically. Clicking on each image routes to another page with further details using the data from the API.</li>
+        <li>Retreives data from an API and display it's images dynamically.</li>
+        <li>Each image routes to another page with further details using the data from the API.</li>
         <li>Uses React and Routes</li>
         <li>API from splashbase.co</li>
         <li><code>https://github.com/johnnyintheoc/react-app</code></li>
@@ -58,6 +70,7 @@
     </div>
     <ul class="project-details">
         <li>Simple txt message animation using pure JQuery + CSS3</li>
+        <li>Enter a message and press enter or the send button</li>
     </ul><br /><br />
 
     <div class="grid">
@@ -87,7 +100,7 @@
         <li>SSL and 256 bit AES data encryption</li>
         <li>File encrypt/decrypt</li>
         <li>Forgot password with email verification</li>
-        <li>Backend area for member lookup and modify</li>
+        <li>Backend area for member lookup and modifications</li>
         <li>Members document system</li>
         <li>Members investment lookup with easy pdf/excel file download options</li>
         <li>Languages: PHP, Jquery, VBA, HTML/CSS</li>
@@ -119,7 +132,7 @@
     <br />
     <ul class="project-details">
         <li>Zoho V2 API Web Integration</li>
-        <li>Custom class written to handle token security for Zoho V2 required</li>
+        <li>Custom class written to handle Auth token security for Zoho V2 required</li>
         <li>Real time web based interactions (search, insert, modify, etc)</li>
         <li>Output of Zoho data to CSV for import to Bluehornet API</li>
         <li>Real time VBA data insert/update to Zoho</li>
