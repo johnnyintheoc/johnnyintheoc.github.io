@@ -262,5 +262,6 @@ code {
     section .project-img img {width:275px;}
     section .web-details {margin-left:40px;}
     section .project-details {margin-left:40px;}
+    section .grid img {width:120px;height:120px;}
     footer {font-size:11px;}
 }
