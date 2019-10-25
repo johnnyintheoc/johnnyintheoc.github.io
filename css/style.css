@@ -102,6 +102,7 @@ section {
     padding:20px;
     opacity: 0.9;
 }
+.no-opacity {opacity:1}
 section .web-details {
     margin-left:40px;
 }
@@ -249,6 +250,15 @@ code {
     padding:6px;
 }
 
+#portfolio-vid {
+    display: block;
+    width:640px;
+    margin:0 auto;
+}
+#portfolio-vid img {
+    border:1px solid slategray;
+}
+
 @media (max-width:768px) {
     .logo {display:block;position:static;margin:0 auto;width:90px;}
     .logo img {display:block;width:90px;margin:20px auto;}
@@ -264,4 +274,7 @@ code {
     section .project-details {margin-left:40px;}
     section .grid img {width:120px;height:120px;}
     footer {font-size:11px;}
+    #portfolio-vid {width:426px;}
+    #portfolio-vid img {width:426px;}
+    #portfolio-vid video {width:426px;height:240px;}
 }
