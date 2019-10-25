@@ -2,6 +2,12 @@ $(function() {
     $('#footer-block').load('https://johnnyintheoc.github.io/footer.html');
     $('#header-block').load('https://johnnyintheoc.github.io/header.html');
 
+    $('.play-portfolio').bind('click', function(e) {
+        e.preventDefault();
+        $('section').addClass('no-opacity');
+        $('#portfolio-vid').html('<video controls autoplay><source src="img/portfolio-intro-480p.mov" type="video/mp4">Your browser does not support the video tag.</video>');
+    });
+
     $('.grid img').bind('click', function(e) {
         e.preventDefault();
         const img = document.createElement('img');
