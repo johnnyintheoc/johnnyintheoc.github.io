@@ -257,6 +257,7 @@ code {
     margin:0 auto;
 }
 #portfolio-vid img {
+    width: 640px;
     border:1px solid slategray;
 }
 
