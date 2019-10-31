@@ -9,7 +9,8 @@ body {
     background-size:cover;
 }
 p, h1, h2, h3, h4, h5, h6 {
-    margin-top:10px;
+    margin: normal;
+    padding: 10px 0px;
 }
 .logo {
     position:absolute;
@@ -96,7 +97,7 @@ nav {
 section {
     overflow:hidden;
     border-radius: 5px;
-    background-color:#fff;
+    background-color: #eaeaea;
     width:80%;
     margin:100px auto;
     padding:20px;
@@ -104,16 +105,28 @@ section {
 }
 .no-opacity {opacity:1}
 section .web-details {
-    margin-left:40px;
+    margin-left:20px;
 }
 section .project-details {
-    margin-left:60px;
+    margin-left:20px;
 }
 section .project-img {
     list-style:none;
 }
 section .project-img img {
     border:1px solid #ccc;
+}
+div.content-color1 {
+    background-color: slategray;
+    color: #fff;
+    margin-bottom:10px;
+    padding:20px;
+}
+div.content-color2 {
+    background-color: #fff;
+    color: #000;
+    margin-bottom:20px;
+    padding:20px;
 }
 footer {
     overflow:hidden;
@@ -150,6 +163,7 @@ footer img {
     display:block;
 }
 code {
+    color:#000;
     font-size:16px;
     background-color:lightyellow;
 }
