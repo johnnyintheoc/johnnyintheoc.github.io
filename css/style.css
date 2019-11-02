@@ -304,7 +304,10 @@ code {
     section .project-img img {width:275px;}
     section .web-details {margin-left:40px;}
     section .project-details {margin-left:40px;}
+    section .grid {grid-template-columns: repeat(3, 120px);}
     section .grid img {width:120px;height:120px;}
+    section .grid2 {grid-template-columns: repeat(3, 180px);}
+    section .grid2 img {width:180px;}
     footer {font-size:11px;}
     #portfolio-vid {width:426px;}
     #portfolio-vid img {width:326px;}
