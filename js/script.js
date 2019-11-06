@@ -2,6 +2,8 @@ $(function() {
     $('#footer-block').load('https://johnnyintheoc.github.io/footer.html');
     $('#header-block').load('https://johnnyintheoc.github.io/header.html');
 
+    $('.carousel').carousel();
+
     $('.play-portfolio').bind('click', function(e) {
         e.preventDefault();
         $('section').addClass('no-opacity');
@@ -40,7 +42,7 @@ $(function() {
         const dte = new Date();
         const msg = $('input[name=iphone-txt]').val();
         if (msg != '') {
-            const txt = '<p><span class="iphone-txt-bubble">' + msg + '</span> <span class="iphone-date">' + dte.toLocaleString() + '</span></p>';
+            const txt = '<span class="iphone-txt-bubble">' + msg + '</span> <span class="iphone-date">' + dte.toLocaleString() + '</span><br /><br />';
             $('.iphone-output').append(txt);
             $('.iphone-txt-bubble').fadeIn('slow');
             $('input[name=iphone-txt]').val('');

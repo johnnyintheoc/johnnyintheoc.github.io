@@ -7,6 +7,7 @@ body {
     font-family:'Poppins', sans-serif;
     background:url('../img/wallpaper-03.jpg') no-repeat fixed center;
     background-size:cover;
+    font-size:12px;
 }
 p, h1, h2, h3, h4, h5, h6 {
     margin: normal;
@@ -101,24 +102,29 @@ section {
     width:80%;
     margin:100px auto;
     padding:20px;
-    opacity: 0.9;
+    opacity: 0.98;
 }
 .no-opacity {opacity:1}
 section .web-details {
     margin-left:20px;
 }
 section .project-details {
-    margin-left:20px;
+    width:68%;
+    margin:0 auto;
+    text-align:justify;
+    font-size:12px;
+    padding:20px;
 }
 section .project-img {
-    list-style:none;
+    margin:0 auto;
+    width:500px;
 }
 section .project-img img {
     border:1px solid #ccc;
 }
 div.content-color1 {
-    background-color: slategray;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     margin-bottom:10px;
     padding:20px;
 }
@@ -164,16 +170,18 @@ footer img {
 }
 code {
     color:#000;
-    font-size:16px;
+    font-size:12px;
     background-color:lightyellow;
 }
 
 .grid {
+    margin:0 auto;
     display: grid;
     grid-template-columns: repeat(3, 200px);
     grid-gap: 10px;
     align-content: center;
     justify-content: left;
+    width:600px;
     height: 70vh;
 }
 
@@ -247,6 +255,7 @@ code {
 }
 
 .project-iphone {
+    margin:0 auto;
     background-image: url('../img/iphone7-635x315.png');
     background-repeat: no-repeat;
     width: 635px;
@@ -259,7 +268,7 @@ code {
     display: block;
     position: relative;
     width: 450px;
-    height: 255px;
+    height: 260px;
     margin: 0 auto;
     background-color: #fff;
     color: #000;
@@ -291,6 +300,15 @@ code {
     border:1px solid slategray;
 }
 
+#carouselExampleIndicators {
+    width: 600px;
+    margin:0 auto;
+}
+
+#carouselExampleIndicators img {
+    border:1px solid #ccc;
+}
+
 @media (max-width:768px) {
     .logo {display:block;position:static;margin:0 auto;width:90px;}
     .logo img {display:block;width:90px;margin:20px auto;}
@@ -301,10 +319,11 @@ code {
     .burger-menu ul {display:block;}
     section {font-size:11px;}
     section code {font-size:11px;}
+    section .project-img {width:275px;}
     section .project-img img {width:275px;}
-    section .web-details {margin-left:40px;}
-    section .project-details {margin-left:15px;}
-    section .grid {grid-template-columns: repeat(3, 100px);}
+    /*section .web-details {margin-left:40px;}*/
+    /*section .project-details {margin-left:15px;}*/
+    section .grid {grid-template-columns: repeat(3, 100px);width:300px;}
     section .grid img {width:100px;height:120px;}
     section .grid2 {grid-template-columns: repeat(2, 150px);}
     section .grid2 img {width:150px;}
@@ -312,4 +331,5 @@ code {
     #portfolio-vid {width:426px;}
     #portfolio-vid img {width:326px;}
     #portfolio-vid video {width:426px;height:240px;}
+    #carouselExampleIndicators {width: 300px;}
 }
