@@ -319,17 +319,17 @@ code {
     .burger-menu ul {display:block;}
     section {font-size:11px;}
     section code {font-size:11px;}
-    section .project-img {width:275px;}
-    section .project-img img {width:275px;}
+    section .project-img {width:250px;}
+    section .project-img img {width:250px;}
     /*section .web-details {margin-left:40px;}*/
-    /*section .project-details {margin-left:15px;}*/
-    section .grid {grid-template-columns: repeat(3, 100px);width:300px;}
-    section .grid img {width:100px;height:120px;}
-    section .grid2 {grid-template-columns: repeat(2, 150px);}
-    section .grid2 img {width:150px;}
+    section .project-details {width:100%;padding:10px;}
+    section .grid {grid-template-columns: repeat(3, 80px);height:200px;}
+    section .grid img {width:100px;height:80px;}
+    /*section .grid2 {grid-template-columns: repeat(2, 150px);}
+    section .grid2 img {width:150px;}*/
     footer {font-size:11px;}
     #portfolio-vid {width:426px;}
     #portfolio-vid img {width:326px;}
     #portfolio-vid video {width:426px;height:240px;}
-    #carouselExampleIndicators {width: 300px;}
+    #carouselExampleIndicators {width: 250px;}
 }
