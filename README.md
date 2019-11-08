@@ -1,6 +1,11 @@
 # https://johnnyintheoc.github.io
 
-<p>- Projects
-<br>- Languages
-<br>- Databases
-<br>- Sandbox</p>
+Created using Bootstrap, HTML5, CSS3
+
+Feel free to use the source code.
+
+Layout
+/css/style.css
+/js/script.js
+/img/
+index.html
