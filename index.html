@@ -427,10 +427,27 @@
             <p id="txt-view-email"><button class="btn btn-outline-secondary btn-view-email">Click to view email</button></p>
         </div>
         <div class="col-12 padding social">
-            <a href="#facebook">facebook</a>
-            <a href="#twitter">twitter</a>
-            <a href="#google-plus">google+</a>
-            <a href="#instagram">instagram</a>
+            <a href="#facebook" data-toggle="modal" data-target="#socialModal">facebook</a>
+            <a href="#twitter" data-toggle="modal" data-target="#socialModal">twitter</a>
+            <a href="#google-plus" data-toggle="modal" data-target="#socialModal">google+</a>
+            <a href="#instagram" data-toggle="modal" data-target="#socialModal">instagram</a>
+        </div>
+    </div>
+</div>
+
+<!-- Social Modal (hidden) -->
+<div class="modal fade" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="socialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="socialModalLabel">Social Links</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid padding">Currently unavailable.</div>
+            </div>
         </div>
     </div>
 </div>
