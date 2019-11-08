@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Example</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
@@ -15,6 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
 </head>
 <body>
 
@@ -438,50 +441,6 @@
         johnnyintheoc.github.io &copy; 2019
     </div>
 </footer>
-    
-<script>
-    $(function() {
-        $(".nav-link").on('click', function(e) {
-            if (this.hash !== "") {
-                e.preventDefault();
-                var hash = this.hash;
-
-                if (hash == "#contactAnchor") {
-                    $('#txt-view-email').html('E-Mail: johnnyoc@gmail.com');
-                }
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
-                    window.location.hash = hash;
-                });
-            }
-        });
-        
-        $('.btn-view-email').on('click', function(e) {
-            e.preventDefault();
-            $('#txt-view-email').html('E-Mail: johnnyoc@gmail.com');
-        });
-
-        $('#portfolioVideoModal').on('show.bs.modal', function (e) {
-            $('#portfolioVideoModal .modal-body').html('<video controls autoplay><source src="./img/portfolio-intro-480p.mov" type="video/mp4">Your browser does not support the video tag.</video>');
-        });
-
-        $('#portfolioVideoModal').on('hide.bs.modal', function (e) {
-            $('#portfolioVideoModal .modal-body').html('');
-        });
-
-        //$(document).on("click", '[data-toggle="lightbox"]', function(event) {
-        //$('.lightbox-content').html('<video controls autoplay><source src="./img/portfolio-intro-480p.mov" type="video/mp4">Your browser does not support the video tag.</video>');
-
-        /*
-        $('.portfolio-video').on('click', function(e) {
-            e.preventDefault();
-            $('#portfolio-vid').html('<video controls autoplay><source src="img/portfolio-intro-480p.mov" type="video/mp4">Your browser does not support the video tag.</video>');
-        });
-        */
-    });
-</script>
 
 </body>
 </html>
