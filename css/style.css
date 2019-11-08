@@ -1,335 +1,254 @@
-* {
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
-}
-body {
-    font-family:'Poppins', sans-serif;
-    background:url('../img/wallpaper-03.jpg') no-repeat fixed center;
-    background-size:cover;
-    font-size:12px;
-}
-p, h1, h2, h3, h4, h5, h6 {
-    margin: normal;
-    padding: 10px 0px;
-}
-.logo {
-    position:absolute;
-    top:15px;
-    left:15px;
-}
-.logo img {
-    width:60px;
-}
-.logo a {
-    display:block;
-}
-nav {
-    overflow:hidden;
-    position:absolute;
-    right:15px;
-    top:15px;
-    border:1px solid #cccccc;
-    border-radius: 5px;
-    user-select: none;
-    transition: border-color 0.5s ease, opacity 0.4s ease;
-    background-color:#fff;
-}
-.main-nav {
-    display:flex;
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    list-style:none;
-    white-space:nowrap;
-}
-.main-nav li {
-    display:flex;
-    align-items:center;
-    border-right:1px solid #ccc;
-}
-.main-nav li:last-child {
-    border-right-style:none;
-}
-.main-nav li a {
-    text-decoration: none;
-    font-size:12px;
-    padding:10px;
-    background-color:#fff;
-    color:#000;
-    font-weight:bold;
-    width:100%;
-}
-.main-nav a:hover {
-    background-color:#eaeaea;
-}
-.side-nav {
-    display:none;
-    overflow:hidden;
-    position:absolute;
-    margin:0;
-    top:0;
-    background-color:#eaeaea;
-    padding:10px;
-    width:250px;
-    height:100%;
-    opacity: 0.97;
-    z-index:99;
-}
-.side-nav ul {list-style:none;width:100%;margin:0;padding:0;}
-.side-nav a {
-    display:block;
-    text-decoration:none;
-    font-size:14px;
-    color:#000;
-    padding:20px;
-    width:100%;
-}
-.side-nav a:hover {background-color:white;}
-.wallpaper {
-    overflow:hidden;
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index:-99;
-}
-section {
-    overflow:hidden;
-    border-radius: 5px;
-    background-color: #eaeaea;
-    width:80%;
-    margin:100px auto;
-    padding:20px;
-    opacity: 0.98;
-}
-.no-opacity {opacity:1}
-section .web-details {
-    margin-left:20px;
-}
-section .project-details {
-    width:68%;
-    margin:0 auto;
-    text-align:justify;
-    font-size:12px;
-    padding:20px;
-}
-section .project-img {
-    margin:0 auto;
-    width:500px;
-}
-section .project-img img {
-    border:1px solid #ccc;
-}
-div.content-color1 {
-    background-color: #fff;
-    color: #000;
-    margin-bottom:10px;
-    padding:20px;
-}
-div.content-color2 {
-    background-color: #fff;
-    color: #000;
-    margin-bottom:20px;
-    padding:20px;
-}
-footer {
-    overflow:hidden;
-    border-radius: 5px;
-    border:1px solid #ccc;
-    width:80%;
-    margin:100px auto;
-    padding:10px;
-    color:gray;
-    font-size:14px;
-    text-align:center;
-    background-color:#fff;
-    opacity: 0.65;
-}
-footer img {
-    width:30px;
-    vertical-align:middle;
-}
-.burger-menu ul {
-    display:none;
-    width:30px;
-    list-style:none;
-    margin:20px 20px;
-    padding:0;
-    cursor:pointer;
-}
-.burger-menu ul li {
-    width:100%;
-    height:4px;
-    margin:6px 0;
-    background-color:#fff;
-}
-.active {
-    display:block;
-}
-code {
-    color:#000;
-    font-size:12px;
-    background-color:lightyellow;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-.grid {
-    margin:0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-gap: 10px;
-    align-content: center;
-    justify-content: left;
-    width:600px;
-    height: 70vh;
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
 }
-
-.grid img {
-    width: 200px;
-    height: 200px;
-    border:1px solid gray;
-    cursor: pointer;
+.navbar {
+    padding: .8rem;
 }
-
-.grid2 {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-gap: 10px;
-    align-content: center;
-    justify-content: left;
-    height: 30vh;
+.navbar-nav li {
+    padding-right: 20px;
 }
-
-.grid2 img {
-    width: 300px;
-    border:1px solid gray;
-    cursor: pointer;
+.nav-link {
+    font-size: 1.1em !important;
 }
-
-#lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
+.navbar-brand img {
+    width:50px;
+}
+.carousel-inner img {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    z-index: 1000;
 }
-
-#lightbox img {
-    border:5px solid #fff;
+.carousel-caption {
+    position: absolute;
+    top: 35%;
+    
 }
-
-#lightbox.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slide-images img {
+    width: 10%;
+    height: 10%
 }
-
-#lightbox a.close {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    top: -215px;
-    left: 410px;
-    text-align:center;
-    color: #ff0000;
-    text-decoration:none;
-    background-color: #fff;
+.carousel-caption h1 {
+    font-size: 400%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
 }
-
-.iphone-txt-bubble {
-    display:none;
-    background-color: royalblue;
-    color: #fff;
-    padding: 4px;
-    border-radius: 5px;
-    font-size:11px;
+.carousel-caption h2 {
+    font-size: 300%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
 }
-
-.iphone-date {
-    font-size:11px;
-    color:#ccc;
+.carousel-caption h3 {
+    font-size: 150%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
 }
-
-.project-iphone {
-    margin:0 auto;
-    background-image: url('../img/iphone7-635x315.png');
-    background-repeat: no-repeat;
-    width: 635px;
-    height: 315px;
-    padding:30px;
-    font-size:13px;
+.btn-primary {
+    background-color: #6648b1;
+    border: 1px solid #6648b1;
 }
-
-.iphone-wrapper {
-    display: block;
-    position: relative;
-    width: 450px;
-    height: 260px;
+.btn-primary:hover {
+    background-color: #563d7c;
+    border: 1px solid #563d7c;
+}
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+.padding {
+    padding-bottom: 2rem;
+}
+/*
+.welcome {
+    width: 75%;
     margin: 0 auto;
-    background-color: #fff;
-    color: #000;
+    padding-top: 2rem;
 }
-
-.iphone-output {
-    display: block;
+.welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+.fun {
     width: 100%;
-    height: 225px;
+    margin-bottom: 2rem;
+}
+.gif {
+    max-width: 100%;
+}
+*/
+.projects {
+    width: 75%;
     margin: 0 auto;
-    overflow: auto;
-    padding:10px;
-    scrollbar-color: black yellow;
+    padding-top: 2rem;
+}
+.card img {
+    height: 230px;
+}
+.social a {
+    font-size: 1em;
+    padding: 3rem;
+}
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+.portfolio-video img {
+    width: 350px;
+    height: 200px;
 }
 
-.project-iphone input[name=iphone-txt] {
-    width:85%;
-    padding:6px;
+/*--- Media Queries ---*/
+@media (max-width: 992px) {
+    .social a {
+        padding: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 35%;
+    }
+    .carousel-caption h1 {
+        font-size: 200%;
+    }
+    .carousel-caption h2 {
+        font-size: 150%;
+    }
+    .carousel-caption h3 {
+        font-size: 80%;
+        font-weight: 400;
+        padding-bottom: 0.2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+    .display-4 {
+        font-size: 250%;
+    }
+    .social a {
+        padding: 1.22rem;
+    }
+    .portfolio-video img {
+        width: 120px;
+        height: 60px;
+    }
+    .cards h5 {
+        font-size: 100%;
+    }
+    .cards p {
+        font-size: 85%;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 40%;
+    }
+    .carousel-caption h1 {
+        font-size: 120%;
+    }
+    .carousel-caption h2 {
+        font-size: 90%;
+    }
+    .carousel-caption h3 {
+        font-size: 60%;
+    }
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .social a {
+        padding: 0.7rem;
+    }
+    .portfolio-video img {
+        width: 120px;
+        height: 60px;
+    }
+    .cards h5 {
+        font-size: 90%;
+    }
+    .cards p {
+        font-size: 65%;
+    }
 }
 
-#portfolio-vid {
+/*--- Firefox Bug Fix ---*/
+.carousel-item {
+    transition: -webkit-transform 0.5x ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+/*--- Fixed Background Image ---*/
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed {
+    background-image: url('img/wallpaper-03.jpg');
+    position: fixed;
     display: block;
-    width:640px;
-    height:360px;
-    margin:0 auto;
-}
-#portfolio-vid img {
-    width: 640px;
-    border:1px solid slategray;
-}
-
-#carouselExampleIndicators {
-    width: 600px;
-    margin:0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
 }
 
-#carouselExampleIndicators img {
-    border:1px solid #ccc;
+/*--- Bootstrap Padding Fix ---*/
+[class*="col-"] {
+    padding: 1rem;
 }
 
-@media (max-width:768px) {
-    .logo {display:block;position:static;margin:0 auto;width:90px;}
-    .logo img {display:block;width:90px;margin:20px auto;}
-    nav {display:block;position:static;width:200px;margin:auto;}
-    .main-nav {display:block;position:static;}
-    .main-nav li {float:left;clear:both;width:100%;border-right:none;}
-    section {margin-top:50px;}
-    .burger-menu ul {display:block;}
-    section {font-size:11px;}
-    section code {font-size:11px;}
-    section .project-img {width:250px;}
-    section .project-img img {width:250px;}
-    /*section .web-details {margin-left:40px;}*/
-    section .project-details {width:100%;padding:10px;}
-    section .grid {grid-template-columns: repeat(3, 80px);height:200px;}
-    section .grid img {width:100px;height:80px;}
-    /*section .grid2 {grid-template-columns: repeat(2, 150px);}
-    section .grid2 img {width:150px;}*/
-    footer {font-size:11px;}
-    #portfolio-vid {width:426px;}
-    #portfolio-vid img {width:326px;}
-    #portfolio-vid video {width:426px;height:240px;}
-    #carouselExampleIndicators {width: 250px;}
-}
+
+
+
+/*
+XS devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+SM devices (landscape phones, 576px and up)
+@media (min-width: 576px {...}
+
+MD devices (tablets, 768px and up)
+@media (min-width: 768px {...}
+
+LG devices (desktops, 992px and up)
+@media (min-width: 992px) {...}
+
+XL devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {...}
+*/
