@@ -5,7 +5,7 @@ $(function() {
             var hash = this.hash;
 
             if (hash == "#contactAnchor") {
-                $('#txt-view-email').html('E-Mail: johnnyoc@gmail.com');
+                $('#txt-view-email').html('johnnyoc@gmail.com');
             }
 
             $('html, body').animate({

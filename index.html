@@ -16,6 +16,9 @@
     <link rel="stylsheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
 </head>
@@ -32,22 +35,19 @@
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#projectsAnchor" class="nav-link projects-link">PHP Projects</a>
+                    <a href="#projectsAnchor" class="nav-link projects-link"><i class="fas fa-code"></i>  PHP</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projectsAnchor" class="nav-link projects-link">Node Projects</a>
+                    <a href="#projectsAnchor" class="nav-link projects-link"><i class="fab fa-node-js"></i>  Node</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#seoAnchor" class="nav-link projects-link">SEO Projects</a>
+                    <a href="#seoAnchor" class="nav-link projects-link"><i class="fab fa-searchengin"></i>  SEO</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#githubAnchor" class="nav-link github-link">Github</a>
+                    <a href="#githubAnchor" class="nav-link github-link"><i class="fab fa-git-alt"></i>  Github</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#contact" class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-toggle="dropdown">Contact</a>
-                    <div class="dropdown-menu">
-                        <a href="#contactAnchor" class="dropdown-item nav-link">Email</a>
-                    </div>
+                    <a href="#aboutAnchor" class="nav-link about-link"><i class="fas fa-user-ninja"></i>  About</a>
                 </li>
             </ul>
         </div>
@@ -57,8 +57,7 @@
 <!-- Image Slider -->
 <div id="slides" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="1" class="active"></li>
         <li data-target="#slides" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
@@ -84,13 +83,6 @@
                 <img src="./img/json-logo.png" alt="JSON">
             </div>
         </div>
-        <div class="carousel-item">
-            <img class="w-100" src="./img/slide-03-1900x800.jpg" alt="Slide 3">
-            <div class="carousel-caption">
-                <h2>Portfolio Video</h2>
-                <a href="#portfolioVideo" class="portfolio-video" data-toggle="modal" data-target="#portfolioVideoModal"><img src="./img/portfolio-intro.jpg" alt="Portfolio Video"></a>
-            </div>
-        </div>
     </div>
     <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -100,21 +92,6 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
-
-<!-- Portfolio Video (hidden) -->
-<div class="modal fade" id="portfolioVideoModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="portfolioModalLabel">Portfolio Video</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body text-center"></div>
-        </div>
-    </div>
 </div>
 
 <!-- Projects -->
@@ -130,16 +107,16 @@
 <div class="container-fluid padding">
     <div class="row text-center padding">
         <div class="col-xs-12 col-sm-6 col-md-4">
-            <h3>Node JS</h3>
-            <p>Built using the latest version of Node.js with routing support using React, Express, and in either a non-relational database with MongoDB connected to a AWS Cluster or a relational database with MySQL.</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <h3>Bootstrap</h3>
-            <p>Responsive designs created with the latest version of Bootstrap, HTML5, and CSS3. Simplified, easy, and clean coding layouts for both Desktop and Mobile.</p>
+            <h3>Node.js</h3>
+            <p>Built using the latest version of Node.js with routing support using React and Express. Front end frameworks such as Express Handlebars with Bootstrap 4, HTML 5, and CSS3. Using both non-realtional and relational databases, such as MongoDB Atlas on the cloud and MySQL.</p>
         </div>
         <div class="col-sm-12 col-md-4">
             <h3>PHP</h3>
             <p>Dynamic sites created with PHP, MySQL, Sessions, and secure data encryption. All combined with a custom Wordpress template or a dynamic design that includes Search Engine Optimized page layouts.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <h3>SEO</h3>
+            <p>Professional experience optimizing major websites accross the industry including, Luxury Real Estates, Yellow Cab Taxi, Beverly Hills Doctors, Surgery, Cosmetics, and Skin care.</p>
         </div>
     </div>
     <hr class="my-4">
@@ -305,7 +282,7 @@
                     <p class="card-text">
                         Dr. 90210 was a popular reality show that featured celebrity cosmetic surgery 
                         done by established doctors in Beverly Hills. One of the doctors specialized 
-                        in vaginal rejuvination and became a popular search term. Our team optimized these terms 
+                        in vaginal rejuvenation and became a popular search term. Our team optimized these terms 
                         for the doctors website bringing in valuable leads and controversies...
                     </p>
                     <p class="blockquote-footer">SEO, PHP, Dr. 90210</p>
@@ -673,7 +650,17 @@
                 </div>
                 <div class="container-fluid padding">
                     <br>
-                    <p>...</p>
+                    <p>
+                        Yellow Cab Taxi owned many website domains focused in specific areas, such as yellowcabla.com, californiayellowcab.com, etc. 
+                    </p>
+                    <p>
+                        Working directly with the owner of Yellow Cab, our team optimized each page through content writing, keywords, linking, and 
+                        code optimization for fast load times.
+                    </p>
+                    <p>
+                        Meetings were held to provide data and statistics, and scaled for goals and expectations. 
+                        Throughout our processes, we have only seen an upward trend.
+                    </p>
                     <p><a href="https://www.yellowcab.com" class="btn btn-info" target="_blank">View Site</a></p>
                     <p class="blockquote-footer">Website may have changed throughout the years.</p>
                     <p class="blockquote-footer">Keywords: SEO, PHP, ASP, Javascript, Yellow Cab Taxi</p>
@@ -698,7 +685,20 @@
                 </div>
                 <div class="container-fluid padding">
                     <br>
-                    <p>...</p>
+                    <p>
+                        The McMonigle Group's website was initially designed by our team upon multiple private meetings with John McMonigle.
+                        The design phase incorporated an SEO friendly layout utilizing PHP and Javascript.
+                    </p>
+                    <p>
+                        Keywords were developed for both short tail and long tail, and dynamic content generated specifically for each keyword.
+                    </p>
+                    <p>
+                        Each page was optimized for the best load time by compressing images, javascript, and other coding without compromising 
+                        the design and quality of the real estate photos/videos.
+                    </p>
+                    <p>
+                        Further, an email marketing plan was established bringing great PR exposure, content, and link building for the website.
+                    </p>
                     <p><a href="https://www.mcmoniglegroupcorp.com" class="btn btn-info" target="_blank">View Site</a></p>
                     <p class="blockquote-footer">Website may have changed throughout the years.</p>
                     <p class="blockquote-footer">Keywords: SEO, PHP, Javascript, JQuery, McMonigle Group, Luxury Real Estate</p>
@@ -712,7 +712,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="projectModalLabel9">SEO: Yellow Cab Taxi</h5>
+                <h5 class="modal-title" id="projectModalLabel9">SEO: Destin Properties</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -723,7 +723,18 @@
                 </div>
                 <div class="container-fluid padding">
                     <br>
-                    <p>...</p>
+                    <p>
+                        Real estate along the Destin shores of Florida was very popular and our team set up Destin Properties 
+                        with a strong SEO plan.
+                    </p>
+                    <p>
+                        Although the main keywords for Destin Real Estate were difficult to rank for, we were able to rank other 
+                        variations of keywords to be in the top 1-3 pages of google.
+                    </p>
+                    <p>
+                        Utilizing the MLS Properties API, we were able to optimize Destin Properties in orangic ranking for many valuable  
+                        keywords throughout all search engines.
+                    </p>
                     <p><a href="https://www.destinproperties.com" class="btn btn-info" target="_blank">View Site</a></p>
                     <p class="blockquote-footer">Website may have changed throughout the years.</p>
                     <p class="blockquote-footer">Keywords: SEO, PHP Javascript, JQuery, Destin Properties, Luxury Real Estate</p>
@@ -748,7 +759,16 @@
                 </div>
                 <div class="container-fluid padding">
                     <br>
-                    <p>...</p>
+                    <p>
+                        Within the Dr. 90210 show there were many doctors that specialized in different fields. 
+                        One was Vaginal Rejuvenation and the specialized doctor came into contact with us to optimize 
+                        his website. 
+                    </p>
+                    <p>
+                        Along with generating keyword rich content pages, we offered valuable video inclusions throughout 
+                        the site pages. These videos consisted of Q&amp;A, sit down discussions, and in office visits, and 
+                        overall generated high organic page rankings.
+                    </p>
                     <p><a href="https://www.drrobertrey.com" class="btn btn-info" target="_blank">View Site</a></p>
                     <p class="blockquote-footer">Website may have changed throughout the years.</p>
                     <p class="blockquote-footer">Keywords: SEO, PHP, Javascript, Dr 90210, Plastic Surgery</p>
@@ -773,7 +793,24 @@
                 </div>
                 <div class="container-fluid padding">
                     <br>
-                    <p>...</p>
+                    <p>
+                        Although the OnlineSurgery.com website was the first site to broadcast live surgery video on the web, 
+                        it reached it's peak and was eventually sold to the company in which I worked for.
+                    </p>
+                    <p>
+                        Our company had an idea to turn the website around by utilizing SEO and Google Adwords. 
+                    </p>
+                    <p>
+                        A short term plan of Google Adwords was created to promote the site, while at the same time 
+                        creating organic pages and content.
+                    </p>
+                    <p>
+                        Once the organic rankings rose, adwords was cut back and the site ultimately reached high rankings 
+                        and site visits, with coninued highs each month.
+                    </p>
+                    <p>
+                        Utilizing the high rankings of OnlineSurgery.com, other sites in the field were developed to drive combined rankings.
+                    </p>
                     <p><a href="https://www.onlinesurgery.com" class="btn btn-info" target="_blank">View Site</a></p>
                     <p class="blockquote-footer">Website may have changed throughout the years.</p>
                     <p class="blockquote-footer">Keywords: SEO, PHP, ASP, Javascript, Online Surgery</p>
@@ -821,28 +858,28 @@
 <div class="container-fluid padding">
     <div class="row">
         <div class="col padding cards">
-            <h5 class="card-title">This Portfolio Site + Bootstrap (johnnyintheoc.github.io)</h5>
+            <h6 class="card-title">This Portfolio Site + Bootstrap</h6>
             <p>
                 <a href="https://github.com/johnnyintheoc/johnnyintheoc.github.io" target="_blank" class="btn btn-outline-secondary">view source</a>
                 &nbsp;&nbsp; https://github.com/johnnyintheoc/johnnyintheoc.github.io
             </p>
             <br>
 
-            <h5 class="card-title">Node + MongoDB</h5>
+            <h6 class="card-title">Node + MongoDB</h6>
             <p>
                 <a href="https://github.com/johnnyintheoc/Node-Restful-API" target="_blank" class="btn btn-outline-secondary">view source</a>
                 &nbsp;&nbsp; https://github.com/johnnyintheoc/Node-Restful-API
             </p>
             <br>
 
-            <h5 class="card-title">Node + MySQL</h5>
+            <h6 class="card-title">Node + MySQL</h6>
             <p>
                 <a href="https://github.com/johnnyintheoc/react-app" target="_blank" class="btn btn-outline-secondary">view source</a>
                 &nbsp;&nbsp; https://github.com/johnnyintheoc/react-app
             </p>
             <br>
 
-            <h5 class="card-title">Node + Express Routing + GET/POST</h5>
+            <h6 class="card-title">Node + Express Routing + GET/POST</h6>
             <p>
                 <a href="https://github.com/johnnyintheoc/nodejs-express" target="_blank" class="btn btn-outline-secondary">view source</a>
                 &nbsp;&nbsp; https://github.com/johnnyintheoc/nodejs-express
@@ -853,19 +890,207 @@
     <hr class="my-4">
 </div>
 
-<!-- Contact -->
+<!-- About -->
 <div class="container-fluid padding">
     <div class="row padding text-center">
         <div class="col-12">
-            <h2 class="display-4" id="contactAnchor">Contact</h2>
+            <h2 class="display-4" id="aboutAnchor">About</h2>
             <br>
-            <p id="txt-view-email"><button class="btn btn-outline-secondary btn-view-email">Click to view email</button></p>
+            
+            <div class="col-md-6 m-auto text-left">
+                <div class="card">
+                    <div class="card-body small">
+                        <h5 class="card-title">Quick Summary</h5>
+                        <p class="card-text">
+                            10+ years of professional programming experience with PHP, MySQL, Javascript, XHTML, CSS, and Search Engine Optimization.
+                        </p>
+                        <p class="card-text">
+                            Strong knowledge and experience with Node.js, React, Express, Handlebars, MongoDB, Python 3, Bootstrap 4, HTML5, and CSS3.
+                        </p>
+                        <p class="card-text">
+                            Please see projects for full source code and demo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 m-auto text-left">
+                <div class="card">
+                    <div class="card-body small">
+                        <h5>Portfolio Video</h5>
+                        <p><a href="#portfolioVideo" class="portfolio-video" data-toggle="modal" data-target="#portfolioVideoModal"><img src="./img/portfolio-intro.jpg" alt="Portfolio Video"></a></p>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 m-auto text-left">
+                <div class="card">
+                    <div class="card-body small">
+                        <h5>Hobbies</h5>
+                        <p>Analog Film Photography</p>
+                        <div class="photos">
+                            <a href="#photo-ford" data-toggle="modal" data-target="#photo1"><img src="./img/hobbies/olympusom1-ektar100-ford-2.jpg" alt="Olympus OM-1, Ektar 100 ISO: Ford Truck"></a>
+                            <a href="#photo-bmw" data-toggle="modal" data-target="#photo2"><img src="./img/hobbies/pentaxk1000-fuji400-bmw.jpg" alt="Pentax K1000, Fujifilm 400 ISO: BMW"></a>
+                            <a href="#photo-camera" data-toggle="modal" data-target="#photo3"><img src="./img/hobbies/pentaxk1000-fuji400-camera.jpg" alt="Pentax K1000, Fujifilm 400 ISO: Camera"></a>
+                            <a href="#photo-adidas" data-toggle="modal" data-target="#photo4"><img src="./img/hobbies/pentaxk1000-fuji400-adidas.jpg" alt="Pentax K1000, Fujifilm 400 ISO: Adidas"></a>
+                            <a href="#photo-johnny" data-toggle="modal" data-target="#photo5"><img src="./img/hobbies/pentaxk1000-kodak400-johnny.jpg" alt="Pentax K1000, Kodak 400 ISO Expired Film"></a>
+                        </div>
+
+                        <br><br><p>Cafe Racer Motorcycles</p>
+                        <div class="photos">
+                            <a href="#photo-cl175" data-toggle="modal" data-target="#photo9"><img src="./img/hobbies/canont2i-cl175-1.jpg" alt="Honda CL-175 Motorcycle"></a>
+                            <a href="#photo-cl175" data-toggle="modal" data-target="#photo10"><img src="./img/hobbies/canont2i-cl175-2.jpg" alt="Honda CL-175 Motorcycle"></a>
+                            <a href="#photo-cl360" data-toggle="modal" data-target="#photo6"><img src="./img/hobbies/olympusom1-ektar100-cl360-1.jpg" alt="Olympus OM-1, Ektar 100 ISO: Honda CL-360 Motorcycle"></a>
+                            <a href="#pboto-cl360" data-toggle="modal" data-target="#photo7"><img src="./img/hobbies/olympusom1-ektar100-cl360-2.jpg" alt="Olympus OM-1, Ektar 100 ISO: Honda CL-360 Motorcycle"></a>
+                            <a href="#photo-cl360" data-toggle="modal" data-target="#photo8"><img src="./img/hobbies/pentaxk1000-portra400-cl360-1.jpg" alt="Pentax K1000, Portra 400 ISO: Honda CL-360 Motorcycle"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- hidden photos -->
+            <div class="modal fade" id="photo1" tabindex="-1" role="dialog" aria-labelledby="photoLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/olympusom1-ektar100-ford-2.jpg" alt="Olympus OM-1, Ektar 100 ISO: Ford Truck">
+                        <div class="p-2 text-left small">
+                            Random Ford Truck in a parking lot.
+                            <span class="blockquote-footer">Shot on Olympus OM-1, Ektar 100 ISO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="photo2" tabindex="-1" role="dialog" aria-labelledby="photoLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/pentaxk1000-fuji400-bmw.jpg" alt="Pentax K1000, Fujifilm 400 ISO: BMW">
+                        <div class="p-2 text-left small">
+                            Random BMW in a parking lot.
+                            <span class="blockquote-footer">Shot on Pentax K1000, Fujifilm 400 ISO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="photo3" tabindex="-1" role="dialog" aria-labelledby="photoLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/pentaxk1000-fuji400-camera.jpg" alt="Pentax K1000, Fujifilm 400 ISO: Camera">
+                        <div class="p-2 text-left small">
+                            Olympus OM-1 next to Macbook Pro
+                            <span class="blockquote-footer">Shot on Pentax K1000, Fujifilm 400 ISO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="photo4" tabindex="-1" role="dialog" aria-labelledby="photoLabel4" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/pentaxk1000-fuji400-adidas.jpg" alt="Pentax K1000, Fujifilm 400 ISO: Adidas">
+                        <div class="p-2 text-left small">
+                            Adidas Vs Nike.
+                            <span class="blockquote-footer">Shot on Pentax K1000, Fujifilm 400 ISO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="photo5" tabindex="-1" role="dialog" aria-labelledby="photoLabel5" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/pentaxk1000-kodak400-johnny.jpg" alt="Pentax K1000, Kodak 400 ISO Expired Film">
+                        <div class="p-2 text-left small">
+                            Self portrait on expired film.
+                            <span class="blockquote-footer">Shot on Pentax K1000, Kodak 400 ISO (Expired 1990's)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="photo6" tabindex="-1" role="dialog" aria-labelledby="photoLabel6" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/olympusom1-ektar100-cl360-1.jpg" alt="Olympus OM-1, Ektar 100 ISO: Honda CL-360 Motorcycle">
+                        <div class="p-2 text-left small">
+                            1975 Honda CL-360.
+                            <span class="blockquote-footer">Shot on Olympus OM-1, Ektar 100 ISO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="photo7" tabindex="-1" role="dialog" aria-labelledby="photoLabel7" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/olympusom1-ektar100-cl360-2.jpg" alt="Olympus OM-1, Ektar 100 ISO: Honda CL-360 Motorcycle">
+                        <div class="p-2 text-left small">
+                            1975 Honda CL-360 next to 2017 Tacoma SR5.
+                            <span class="blockquote-footer">Shot on Olympus OM-1, Ektar 100 ISO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="photo8" tabindex="-1" role="dialog" aria-labelledby="photoLabel8" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/pentaxk1000-portra400-cl360-1.jpg" alt="Pentax K1000, Portra 400 ISO: Honda CL-360 Motorcycle">
+                        <div class="p-2 text-left small">
+                            1975 Honda CL-360 with Olympus OM-1 on seat.
+                            <span class="blockquote-footer">Shot on Pentax K1000, Portra 400 ISO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="photo9" tabindex="-1" role="dialog" aria-labelledby="photoLabel9" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/canont2i-cl175-1.jpg" alt="Honda CL-175 Motorcycle">
+                        <div class="p-2 text-left small">
+                            1971 Honda CL-175.
+                            <span class="blockquote-footer">Shot on Canon T2i, 50mm f1.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="photo10" tabindex="-1" role="dialog" aria-labelledby="photoLabel10" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img src="./img/hobbies/canont2i-cl175-2.jpg" alt="Honda CL-175 Motorcycle">
+                        <div class="p-2 text-left small">
+                            1971 Honda CL-175.
+                            <span class="blockquote-footer">Shot on Canon T2i, 50mm f1.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><p id="txt-view-email"><button class="btn btn-outline-secondary btn-view-email">Click to view email</button></p>
         </div>
         <div class="col-12 padding social">
             <a href="#facebook" data-toggle="modal" data-target="#socialModal">facebook</a>
             <a href="#twitter" data-toggle="modal" data-target="#socialModal">twitter</a>
             <a href="#google-plus" data-toggle="modal" data-target="#socialModal">google+</a>
             <a href="#instagram" data-toggle="modal" data-target="#socialModal">instagram</a>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Video (hidden) -->
+<div class="modal fade" id="portfolioVideoModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="portfolioModalLabel">Portfolio Video</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center"></div>
         </div>
     </div>
 </div>
