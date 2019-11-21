@@ -22,7 +22,7 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-light navbar-expand-md bg-light sticky-top" id="homeAnchor">
+<nav class="navbar navbar-light navbar-expand-md bg-light sticky-top">
     <div class="container-fluid">
         <a href="#" class="navbar-brand"><img src="./img/johnny_profile.png" alt="Johnny"></a>
         <div class="navbar-text">Johnny Portfolio</div>
@@ -31,11 +31,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a href="#homeAnchor" class="nav-link portfolio-link">Portfolio</a>
+                <li class="nav-item">
+                    <a href="#projectsAnchor" class="nav-link projects-link">PHP Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projectsAnchor" class="nav-link projects-link">Projects</a>
+                    <a href="#projectsAnchor" class="nav-link projects-link">Node Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#seoAnchor" class="nav-link projects-link">SEO Projects</a>
                 </li>
                 <li class="nav-item">
                     <a href="#githubAnchor" class="nav-link github-link">Github</a>
@@ -118,7 +121,7 @@
 <div class="container-fluid padding">
     <div class="row text-center projects">
         <div class="col-12">
-            <h1 class="display-4" id="projectsAnchor">Projects</h1>
+            <h1 class="display-4">Projects</h1>
         </div>
     </div>
 </div>
@@ -143,8 +146,9 @@
 </div>
 
 <!-- Project Cards -->
-<div class="container-fluid padding">
+<div class="container-fluid padding" id="projectsAnchor">
     <div class="row padding">
+        <!-- Node -->
         <div class="col-md-4">
             <div class="card">
                 <a href="#" data-toggle="modal" data-target="#projectModal1"><img src="./img/node-mongodb.jpg" alt="Node Project with MongoDB" class="card-img-top"></a>
@@ -159,6 +163,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-md-4">
             <div class="card">
                 <a href="#" data-toggle="modal" data-target="#projectModal2"><img src="./img/node-youtube.jpg" alt="Node Project with MySQL" class="card-img-top"></a>
@@ -173,6 +178,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- PHP -->
         <div class="col-md-4">
             <div class="card">
                 <a href="#" data-toggle="modal" data-target="#projectModal3"><img src="./img/wv-01.jpg" alt="PHP Website with MySQL" class="card-img-top"></a>
@@ -190,43 +197,166 @@
     </div>
 
     <div class="row padding">
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="#" data-toggle="modal" data-target="#projectModal4"><img src="./img/wv-noteboard-01.jpg" alt="PHP Noteboard" class="card-img-top"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Members Noteboard Forum</h5>
-                        <p class="card-text">A forum created for collaborations within the company. Uses PHP, Sessions, JQuery, MySQL, and data encryption. Allows members to comment, reply, upload files, and recieve email notifications...</p>
-                        <p class="blockquote-footer">PHP, MySQL, Sessions, Javascript, JQuery, Encryption</p>
-                    <div class="row">
-                        <div class="col text-left"><a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal4">Read More</a></div>
-                        <div class="col text-right"><a href="https://www.wavelandgroup.com/" class="btn btn-info" target="_blank">View Site</a></div>
-                    </div>
-                    </div>
+        <!-- PHP -->
+        <div class="col-md-4">
+            <div class="card">
+                <a href="#" data-toggle="modal" data-target="#projectModal4"><img src="./img/wv-noteboard-01.jpg" alt="PHP Noteboard" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Members Noteboard Forum</h5>
+                    <p class="card-text">A forum created for collaborations within the company. Uses PHP, Sessions, JQuery, MySQL, and data encryption. Allows members to comment, reply, upload files, and recieve email notifications...</p>
+                    <p class="blockquote-footer">PHP, MySQL, Sessions, Javascript, JQuery, Encryption</p>
+                <div class="row">
+                    <div class="col text-left"><a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal4">Read More</a></div>
+                    <div class="col text-right"><a href="https://www.wavelandgroup.com/" class="btn btn-info" target="_blank">View Site</a></div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="#" data-toggle="modal" data-target="#projectModal5"><img src="./img/zoho-01.jpg" alt="Zoho V2 API" class="card-img-top"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Zoho API Auth</h5>
-                        <p class="card-text">Integrated the Zoho V2 API to company site by creating custom methods to handle Auth Tokens. Uses PHP and MySQL for token storage...</p>
-                        <p class="blockquote-footer">PHP, MySQL, Zoho V2 API, Auth Tokens</p>
-                        <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal5">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="#" data-toggle="modal" data-target="#projectModal6"><img src="./img/mapp-cloud-01.jpg" alt="Mapp Cloud API" class="card-img-top"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Mapp Cloud API Integration</h5>
-                        <p class="card-text">Integrated the Mapp API (formally Bluehornet API) for company website by creating custom methods to handle bulk data uploads and queries. Uses PHP and MySQL for contact data storage and exports...</p>
-                        <p class="blockquote-footer">PHP, MySQL, Mapp Cloud API</p>
-                        <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal6">Read More</a>
-                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- APIs -->
+        <div class="col-md-4">
+            <div class="card">
+                <a href="#" data-toggle="modal" data-target="#projectModal5"><img src="./img/zoho-01.jpg" alt="Zoho V2 API" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Zoho API Auth</h5>
+                    <p class="card-text">Integrated the Zoho V2 API to company site by creating custom methods to handle Auth Tokens. Uses PHP and MySQL for token storage...</p>
+                    <p class="blockquote-footer">PHP, MySQL, Zoho V2 API, Auth Tokens</p>
+                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal5">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="#" data-toggle="modal" data-target="#projectModal6"><img src="./img/mapp-cloud-01.jpg" alt="Mapp Cloud API" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Mapp Cloud API Integration</h5>
+                    <p class="card-text">Integrated the Mapp API (formally Bluehornet API) for company website by creating custom methods to handle bulk data uploads and queries. Uses PHP and MySQL for contact data storage and exports...</p>
+                    <p class="blockquote-footer">PHP, MySQL, Mapp Cloud API</p>
+                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal6">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row padding" id="seoAnchor">
+        <!-- SEO -->
+        <div class="col-md-4">
+            <div class="card">
+                <a href="#" data-toggle="modal" data-target="#projectModal7"><img src="./img/seo-yellowcab.jpg" alt="SEO - Yellow Cab Taxi" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">SEO: Yellow Cab Taxi</h5>
+                    <p class="card-text">
+                        Yellow Cab Taxi created multiple websites targeting specific longtail local keywords for SEO. 
+                        Our team maintained and optimized these sites contributing to their early organic rise...</p>
+                    <p class="blockquote-footer">SEO, PHP, Yellowcab Taxi</p>
+                <div class="row">
+                    <div class="col text-left"><a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal7">Read More</a></div>
+                    <div class="col text-right"><a href="https://www.layellowcab.com/" class="btn btn-info" target="_blank">View Site</a></div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="#" data-toggle="modal" data-target="#projectModal8"><img src="./img/seo-mcmonigle.jpg" alt="SEO - McMonigle Group" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">SEO: McMonigle Real Estate Group</h5>
+                    <p class="card-text">
+                        The McMonigle Group was once at the time one of the biggest Luxury Real Estate Groups in Orange County.
+                        Our team was the first to build from the ground up their SEO website structure and SEM strategies...
+                    </p>
+                    <p class="blockquote-footer">SEO, PHP, McMonigle Group, Luxury Real Estate</p>
+                <div class="row">
+                    <div class="col text-left"><a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal8">Read More</a></div>
+                    <div class="col text-right"><a href="https://www.mcmoniglegroupcorp.com/" class="btn btn-info" target="_blank">View Site</a></div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <a href="#" data-toggle="modal" data-target="#projectModal9"><img src="./img/seo-destin.jpg" alt="SEO - Destin Real Estate" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">SEO: Destin Luxury Real Estate</h5>
+                    <p class="card-text">
+                        Luxury Real Estate along the Destin Beach in Florida was one of the most popular places with 
+                        competitive keyword searches. Our SEO strategy brought the Destin Properties website ranking 
+                        to the top 2 - 3 page postiion within google for primary keywords...
+                    </p>
+                    <p class="blockquote-footer">SEO, PHP, Destin Luxury Real Estate</p>
+                <div class="row">
+                    <div class="col text-left"><a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal9">Read More</a></div>
+                    <div class="col text-right"><a href="https://www.destinproperties.com/" class="btn btn-info" target="_blank">View Site</a></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card">
+                <a href="#" data-toggle="modal" data-target="#projectModal10"><img src="./img/seo-dr90210.jpg" alt="SEO - Dr 90210" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">SEO: Dr. 90210</h5>
+                    <p class="card-text">
+                        Dr. 90210 was a popular reality show that featured celebrity cosmetic surgery 
+                        done by established doctors in Beverly Hills. One of the doctors specialized 
+                        in vaginal rejuvination and became a popular search term. Our team optimized these terms 
+                        for the doctors website bringing in valuable leads and controversies...
+                    </p>
+                    <p class="blockquote-footer">SEO, PHP, Dr. 90210</p>
+                <div class="row">
+                    <div class="col text-left"><a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal10">Read More</a></div>
+                    <div class="col text-right"><a href="https://www.drrobertrey.com" class="btn btn-info" target="_blank">View Site</a></div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <a href="#" data-toggle="modal" data-target="#projectModal11"><img src="./img/seo-onlinesurgery.jpg" alt="SEO - OnlineSurgery.com" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">SEO: OnlineSurgery.com</h5>
+                    <p class="card-text">
+                        Online Surgery was the first website to live stream cosmetic surgery over the web. 
+                        Our team hosted, maintained, and optimized the website keeping it's ranking at #1 on 
+                        search engines. This site was later bought out for over a few million undisclosed USD...
+                    </p>
+                    <p class="blockquote-footer">SEO, PHP, Online Surgery</p>
+                <div class="row">
+                    <div class="col text-left"><a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal11">Read More</a></div>
+                    <div class="col text-right"><a href="https://www.onlinesurgery.com/" class="btn btn-info" target="_blank">View Site</a></div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="#" data-toggle="modal" data-target="#projectModal12"><img src="./img/seo-dermanetwork.jpg" alt="SEO - DermaNetwork.org" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">SEO: DermaNetwork.org</h5>
+                    <p class="card-text">
+                        The Derma Network provided people with doctors specialized in skin care treatments. 
+                        Our team hosted, maintained, and optimized the website keeping it's ranking for skin care 
+                        keywords in the top #1 position of search engines. This site was later bought out for over 
+                        a few million undisclosed USD...
+                    </p>
+                    <p class="blockquote-footer">SEO, PHP, Derma Network</p>
+                <div class="row">
+                    <div class="col text-left"><a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#projectModal12">Read More</a></div>
+                    <div class="col text-right"><a href="https://www.dermanetwork.org/" class="btn btn-info" target="_blank">View Site</a></div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <hr class="my-4">
 </div>
@@ -522,6 +652,156 @@
                     <p class="blockquote-footer">Keywords: PHP, MySQL, Mapp Cloud API, Bluehornet API, Auth Access Tokens</p>
                     <p class="blockquote-footer">Source code privately held at company.</p>
                     <p><a href="https://www.wavelandgroup.com/" class="btn btn-info" target="_blank">View Site</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="projectModal7" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel7">SEO: Yellow Cab Taxi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid text-center">
+                    <img src="./img/seo-yellowcab.jpg" alt="SEO - Yellow Cab Taxi" class="card-img-top">
+                </div>
+                <div class="container-fluid padding">
+                    <br>
+                    <p>...</p>
+                    <p><a href="https://www.yellowcab.com" class="btn btn-info" target="_blank">View Site</a></p>
+                    <p class="blockquote-footer">Website may have changed throughout the years.</p>
+                    <p class="blockquote-footer">Keywords: SEO, PHP, ASP, Javascript, Yellow Cab Taxi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="projectModal8" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel8" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel8">SEO: McMonigle Real Estate Group</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid text-center">
+                    <img src="./img/seo-mcmonigle.jpg" alt="SEO - McMonigle Real Estate Group" class="card-img-top">
+                </div>
+                <div class="container-fluid padding">
+                    <br>
+                    <p>...</p>
+                    <p><a href="https://www.mcmoniglegroupcorp.com" class="btn btn-info" target="_blank">View Site</a></p>
+                    <p class="blockquote-footer">Website may have changed throughout the years.</p>
+                    <p class="blockquote-footer">Keywords: SEO, PHP, Javascript, JQuery, McMonigle Group, Luxury Real Estate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="projectModal9" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel9" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel9">SEO: Yellow Cab Taxi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid text-center">
+                    <img src="./img/seo-destin.jpg" alt="SEO - Destin Properites" class="card-img-top">
+                </div>
+                <div class="container-fluid padding">
+                    <br>
+                    <p>...</p>
+                    <p><a href="https://www.destinproperties.com" class="btn btn-info" target="_blank">View Site</a></p>
+                    <p class="blockquote-footer">Website may have changed throughout the years.</p>
+                    <p class="blockquote-footer">Keywords: SEO, PHP Javascript, JQuery, Destin Properties, Luxury Real Estate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="projectModal10" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel10" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel10">SEO: Dr. 90210</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid text-center">
+                    <img src="./img/seo-dr90210.jpg" alt="SEO - Dr. 90210" class="card-img-top">
+                </div>
+                <div class="container-fluid padding">
+                    <br>
+                    <p>...</p>
+                    <p><a href="https://www.drrobertrey.com" class="btn btn-info" target="_blank">View Site</a></p>
+                    <p class="blockquote-footer">Website may have changed throughout the years.</p>
+                    <p class="blockquote-footer">Keywords: SEO, PHP, Javascript, Dr 90210, Plastic Surgery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="projectModal11" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel11" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel11">SEO: OnlineSurgery.com</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid text-center">
+                    <img src="./img/seo-onlinesurgery.jpg" alt="SEO - OnlineSurgery.com" class="card-img-top">
+                </div>
+                <div class="container-fluid padding">
+                    <br>
+                    <p>...</p>
+                    <p><a href="https://www.onlinesurgery.com" class="btn btn-info" target="_blank">View Site</a></p>
+                    <p class="blockquote-footer">Website may have changed throughout the years.</p>
+                    <p class="blockquote-footer">Keywords: SEO, PHP, ASP, Javascript, Online Surgery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="projectModal12" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel12" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel12">SEO: DermaNetwork.org</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid text-center">
+                    <img src="./img/seo-dermanetwork.jpg" alt="SEO - DermaNetwork.org" class="card-img-top">
+                </div>
+                <div class="container-fluid padding">
+                    <br>
+                    <p>...</p>
+                    <p><a href="https://www.dermanetwork.org" class="btn btn-info" target="_blank">View Site</a></p>
+                    <p class="blockquote-footer">Website may have changed throughout the years.</p>
+                    <p class="blockquote-footer">Keywords: SEO, PHP, ASP, Javascript, Derma Network</p>
                 </div>
             </div>
         </div>
