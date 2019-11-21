@@ -18,7 +18,7 @@ $(function() {
     
     $('.btn-view-email').on('click', function(e) {
         e.preventDefault();
-        $('#txt-view-email').html('E-Mail: johnnyoc@gmail.com');
+        $('#txt-view-email').html('johnnyoc@gmail.com');
     });
 
     $('#portfolioVideoModal').on('show.bs.modal', function (e) {
